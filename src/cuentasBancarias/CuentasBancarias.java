@@ -25,6 +25,8 @@ public class CuentasBancarias {
 			System.out.println("No se puede realizar esta tarea");
 			return false;
 		}
+		cuentaDestino.fondos+=monto;
+		this.fondos-=monto;
 		return true;
 	}
 	

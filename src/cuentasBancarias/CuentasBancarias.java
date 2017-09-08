@@ -17,6 +17,10 @@ public class CuentasBancarias {
 	}
 	
 	public void transferirMontoHacia(double monto, CuentasBancarias cuentaDestino) {
+		if(monto > this.fondos) {
+			System.out.println("Saldo Insuficiente");
+			return;
+		}
 		cuentaDestino.fondos=this.fondos;
 	}
 	

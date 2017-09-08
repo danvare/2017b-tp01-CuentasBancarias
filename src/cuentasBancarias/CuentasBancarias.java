@@ -5,7 +5,7 @@ public class CuentasBancarias {
 	private double fondos;
 	
 	public CuentasBancarias() {
-		this.fondos = 1;
+		this.fondos = 0;
 	}
 	
 	public CuentasBancarias(CuentasBancarias cuentaB) {

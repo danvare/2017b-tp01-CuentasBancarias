@@ -1,4 +1,4 @@
-# La gente detrás del proyecto
+﻿# La gente detrás del proyecto
 
 ## Docentes del Taller
 
@@ -7,5 +7,5 @@
 
 ## Estudiantes
 
-* XXX ([xxx](https://github.com/xxx))
-* XXX ([xxx](https://github.com/xxx))
+* Daniel Mariano Varela ([danvare](https://github.com/danvare))
+* Valeria Silvestri ([leyluchy](https://github.com/leyluchy))

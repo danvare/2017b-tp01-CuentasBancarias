@@ -8,11 +8,16 @@ public class CuentasBancarias {
 		this.fondos = 0;
 	}
 	
+	public CuentasBancarias(Double fondos) {
+		this.fondos = fondos;
+	}
+	
 	public CuentasBancarias(CuentasBancarias cuentaB) {
 		this.fondos = cuentaB.fondos;
 	}
 	
 	public void transferirMontoHacia(double monto, CuentasBancarias cuentaDestino) {
+		
 	}
 	
 	public double mostrar() {

@@ -7,14 +7,14 @@ public class CuentasBancariasTest {
 	
 	@Test
 	public void queInicia() {
-		CuentasBancarias origen = new CuentasBancarias();
+		CuentasBancarias origen = new CuentasBancarias(2000.0);
 		CuentasBancarias destino = new CuentasBancarias();
 		
 		double monto = 0;
 
 		origen.transferirMontoHacia(monto, destino);
 		
-		Assert.assertEquals(0, destino.mostrar(),0);
+		Assert.assertEquals(origen.mostrar(), destino.mostrar(),0);
 	}
 
 }

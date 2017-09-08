@@ -25,4 +25,16 @@ public class CuentasBancariasTest {
 		Assert.assertEquals(0.0, destino.mostrar(),0);
 	}
 
+	@Test
+	public void queTransfieraLosFondos() {
+		CuentasBancarias origen = new CuentasBancarias(2000.1);
+		CuentasBancarias destino = new CuentasBancarias();
+		
+		double monto = 2000.1;
+
+		origen.transferirMontoHacia(monto, destino);
+		Assert.assertEquals(2000.1, destino.mostrar(),0);
+		Assert.assertEquals(0.0, origen.mostrar(),0);
+	}
+
 }

@@ -16,12 +16,16 @@ public class CuentasBancarias {
 		this.fondos = cuentaB.fondos;
 	}
 	
-	public void transferirMontoHacia(double monto, CuentasBancarias cuentaDestino) {
+	public boolean transferirMontoHacia(double monto, CuentasBancarias cuentaDestino) {
 		if(monto > this.fondos) {
 			System.out.println("Saldo Insuficiente");
-			return;
+			return false;
 		}
-		cuentaDestino.fondos=this.fondos;
+		if(monto <= 0) {
+			System.out.println("No se puede realizar esta tarea");
+			return false;
+		}
+		return true;
 	}
 	
 	public double mostrar() {

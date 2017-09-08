@@ -17,7 +17,7 @@ public class CuentasBancarias {
 	}
 	
 	public void transferirMontoHacia(double monto, CuentasBancarias cuentaDestino) {
-		
+		this.fondos=cuentaDestino.fondos;
 	}
 	
 	public double mostrar() {
